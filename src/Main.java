@@ -48,46 +48,60 @@ public class Main {
 
         int t = 1;
         int total3 = 15000;
-        System.out.println("НЕ СМОГЛА РЕШИТЬ ЭТУ ЗАДАЧУ");
-
-
-        System.out.println("task3");
-        System.out.println("НЕ СМОГЛА РЕШИТЬ, ТАК КАК ОНА АНАЛОГИЧНА ВТОРОЙ");
-
-
-        System.out.println("task4");
-        int friday = 5;
-        for (; friday <= 31; friday = friday + 7) {
-
-            System.out.println("Сегодня пятница " + friday + "-ое число. Необходимо подготовить отчет.");
-
+        while (total3 <= 12000000) {
+            total3 = total3 + total3 * 7 / 100;
+            if (t % 6 == 0) {
+                System.out.println("Месяц " + t + ", сумма накоплений равна " + total3 + " рублей");}
+                t++;
 
         }
 
-        System.out.println("part3");
-        System.out.println("task1");
-        int currentYear = 2022;
-        int start = currentYear - 200;
-        int end = currentYear + 100;
-        for (int year = start; year < end; year++) {
-            if (year % 79 == 0) {
 
-                System.out.println(year);
+            System.out.println("task3");
+        int s = 1;
+        int total4 = 15000;
+        while (s <= 9*12) {
+            total4 = total4 + total4 * 7 / 100;
+            if (s % 6 == 0) {
+                System.out.println("Месяц " + s + ", сумма накоплений равна " + total4 + " рублей");}
+            s++;
+
+        }
+
+
+            System.out.println("task4");
+            int friday = 5;
+            for (; friday <= 31; friday = friday + 7) {
+
+                System.out.println("Сегодня пятница " + friday + "-ое число. Необходимо подготовить отчет.");
+
+
+            }
+
+            System.out.println("part3");
+            System.out.println("task1");
+            int currentYear = 2022;
+            int start = currentYear - 200;
+            int end = currentYear + 100;
+            for (int year = start; year < end; year++) {
+                if (year % 79 == 0) {
+
+                    System.out.println(year);
+                }
+            }
+            System.out.println("task2");
+
+
+            int number = 1;
+            for (; number <= 10; number++) {
+
+                int product = number * 2;
+                System.out.println("2*" + number + " = " + product);
+
             }
         }
-        System.out.println("task2");
 
-
-        int number = 1;
-        for (; number <= 10; number++) {
-
-            int product = number * 2;
-            System.out.println("2*" + number + " = " + product);
-
-        }
     }
 
-
-}
 
 
